@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gridiron Arcade</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hud">
+        <div class="brand">GRIDIRON ARCADE</div>
+        <div class="scoreboard">
+          <div class="score-box">
+            <span>HOME</span>
+            <strong id="home-score">0</strong>
+          </div>
+          <div class="score-box">
+            <span>AWAY</span>
+            <strong id="away-score">0</strong>
+          </div>
+          <div class="score-box narrow">
+            <span>DOWN</span>
+            <strong id="down-label">1ST</strong>
+          </div>
+          <div class="score-box narrow">
+            <span>TO GO</span>
+            <strong id="yards-label">10</strong>
+          </div>
+          <div class="score-box narrow">
+            <span>TIME</span>
+            <strong id="clock-label">90</strong>
+          </div>
+        </div>
+      </header>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div class="controls-panel">
+        <div id="status-text">Press Start Game to begin the drive.</div>
+        <div class="button-row">
+          <button id="start-button">Start Game</button>
+          <button id="reset-button" class="secondary">Reset</button>
+        </div>
+        <div class="legend">
+          <span>Move: WASD / Arrows</span>
+          <span>Pass: P</span>
+          <span>Sprint: Shift</span>
+          <span>Snap: Space</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
